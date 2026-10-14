@@ -1,0 +1,34 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Python and tool output
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.log
+
+# Generated retrieval artifacts and local datasets
+cache/
+indexes/
+external/
+data/
+outputs/
+*.parquet
+*.npy
+*.npz
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
