@@ -12,6 +12,18 @@
 
 三种检索器通过 MCP 工具接入，LangGraph 负责阶段顺序、状态和提前停止。LightRAG 的 naive 模式承担稠密片段检索；LinearRAG 和 LightRAG local 负责后续检索。检索器运行在各自的 Python 环境中。Evidence Pool 只保存当前问题的结构化证据及来源，不做跨会话长期记忆。
 
+## 项目截图
+
+### 第一阶段检索
+![一阶段](docs/images/1.png)
+
+### 第二阶段检索
+![二阶段](docs/images/2.png)
+
+### 第三阶段检索
+![三阶段](docs/images/3.png)
+
+
 ## 仓库内容
 
 - `src/agentic_rag/graph.py`：LangGraph 节点、条件边、阶段推进和证据池。
